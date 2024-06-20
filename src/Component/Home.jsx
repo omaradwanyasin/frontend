@@ -5,6 +5,7 @@ import Button from "@mui/joy/Button";
 import "./Home.css";
 import userimg from "../img/user.jpg";
 import ai from "../img/ai.jpg";
+
 function Home() {
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState("");
@@ -63,29 +64,37 @@ function Home() {
                 <div className="message-text">{message.text}</div>
                 {message.sender === "bot" && (
                   <div className="message-features">
-                    <span
-                      className="feature-icon"
-                      onClick={() => handleLike(index)}
-                    >
-                      👍
+                    <span className="feature-wrapper">
+                      <span
+                        className="feature-icon"
+                        onClick={() => handleLike(index)}
+                      >
+                        👍
+                      </span>
                     </span>
-                    <span
-                      className="feature-icon"
-                      onClick={() => handleDislike(index)}
-                    >
-                      👎
+                    <span className="feature-wrapper">
+                      <span
+                        className="feature-icon"
+                        onClick={() => handleDislike(index)}
+                      >
+                        👎
+                      </span>
                     </span>
-                    <span
-                      className="feature-icon"
-                      onClick={() => handleCopy(message.text)}
-                    >
-                      📋
+                    <span className="feature-wrapper">
+                      <span
+                        className="feature-icon"
+                        onClick={() => handleCopy(message.text)}
+                      >
+                        📋
+                      </span>
                     </span>
-                    <span
-                      className="feature-icon"
-                      onClick={() => handleDelete(index)}
-                    >
-                      🗑️
+                    <span className="feature-wrapper">
+                      <span
+                        className="feature-icon"
+                        onClick={() => handleDelete(index)}
+                      >
+                        🗑️
+                      </span>
                     </span>
                   </div>
                 )}

@@ -137,3 +137,22 @@
 .send-button:hover {
   background-color: #21a1f1;
 }
+
+.message-features {
+  display: flex;
+  gap: 10px;
+}
+
+.feature-wrapper {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+}
+
+.feature-icon {
+  cursor: pointer;
+}
