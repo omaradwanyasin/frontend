@@ -1,0 +1,139 @@
+/* Home Container */
+.home {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #ffffff;
+}
+
+/* Chat Space */
+.chatspace {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message Container */
+.message-container {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.message-container.user {
+  justify-content: flex-end;
+}
+
+.message-container.bot {
+  justify-content: flex-start;
+}
+
+/* Message Styles */
+.message {
+  max-width: 60%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #333333;
+  background-color: #e0e0e0;
+  position: relative;
+  margin: 0 10px;
+}
+
+.message.user {
+  background-color: #d1e7fd;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.message-text {
+  margin-bottom: 10px;
+}
+
+.message-features {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.feature-icon {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.feature-icon:hover {
+  color: #61dafb;
+}
+
+.feature-icon:active {
+  transform: scale(0.9);
+}
+
+/* Avatars */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-avatar {
+  margin-left: 10px;
+}
+
+.chatbot-avatar {
+  margin-right: 10px;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  align-items: center;
+}
+
+/* Input Field */
+.input-field {
+  flex-grow: 1;
+  margin-right: 15px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+/* Send Button */
+.send-button {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #21a1f1;
+}
